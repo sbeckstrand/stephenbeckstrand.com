@@ -1,0 +1,210 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  /* background-image: url('../assets/images/logan.jpg'); */
+  /* color: white; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/******************************
+HEADER
+******************************/
+
+/* Title */
+.mainTitle {
+  margin-top: 40px;
+}
+.mainTitle h1 {
+  font-size: 5em;
+  font-weight: 200;
+  text-align: center;
+}
+
+.mainTitle, .mainHeader {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+/***************/
+
+/* Nav */
+.mainHeader {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mainHeader ul {
+  list-style: none;
+  display: inline;
+  margin-left: 0px;
+  padding-left: 0;
+}
+
+.mainHeader li {
+  font-weight: 300;
+  font-size: 1.3em;
+  margin-left: 5px;
+  display: inline;
+  padding-bottom: 3px;
+}
+
+.mainHeader li:first-child {
+  margin-left: 0px;
+}
+
+.mainHeader li:nth-child(1):hover {
+  color:#F8807F;
+}
+.mainHeader li:nth-child(2):hover {
+  color: #1DA8E1;
+}
+
+.mainHeader li:nth-child(3):hover {
+  color: #73E48C;
+}
+
+.mainHeader li:nth-child(4):hover {
+  color: #F8807F;
+}
+
+
+.mainHeader a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/***************/
+
+/* Social Links */
+.mainSocial {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.mainSocial ul {
+  list-style: none;
+  display: inline;
+  padding-left: 0;
+}
+
+.mainSocial li {
+  display: inline;
+  margin-left: 5px;
+}
+
+.mainSocial a {
+  text-decoration: none;
+}
+
+.fa-facebook, .fa-snapchat-ghost, .fa-twitter, .fa-instagram, .fa-github, .fa-digital-ocean {
+  /* color: white; */
+  color: black;
+  font-size: 2em;
+}
+
+.fa-facebook:hover {
+  color:#3B5998;
+}
+
+.fa-snapchat-ghost:hover {
+  color: #FFFC00;
+}
+
+.fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+.fa-instagram:hover {
+  color: #E4405F;
+}
+
+.fa-github:hover {
+  color: #6C3483;
+}
+
+.fa-digital-ocean:hover {
+  color: #0080FF;
+}
+
+/***************/
+
+/******************************
+BODY
+******************************/
+
+.mainBody h1 {
+  font-size: 3em;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.mainBody h2 {
+  font-size: 2.4em;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.mainBody h4, .mainBody h5 {
+  margin-top: 40px;
+}
+
+.mainBody h4 span, .mainBody h5 span {
+  font-weight: 400;
+}
+
+.mainBody h1, .mainBody h2, .mainBody h4, .mainBody h5 {
+  font-weight: 200;
+  text-align: center;
+}
+
+.mainBody img {
+  width: 500px;
+  height: 529px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 300px;
+}
+
+.mainBody p {
+  font-size: 1.6em;
+  font-weight: 200;
+  text-align: center;
+}
+
+.mainBody a {
+  text-decoration: none;
+  font-weight: 400;
+  color: inherit;
+}
+
+.about a:hover {
+  color: #F8807F;
+}
+
+.experience a:hover {
+  color: #1DA8E1;
+}
+
+.experience ul {
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+
+.experience ul, .experience li {
+  margin: 0;
+  padding: 0;
+}
+
+.experience p {
+  margin-top: 20px;
+}
+/******************************
+FOOTER
+******************************/
