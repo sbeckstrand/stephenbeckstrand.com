@@ -16,7 +16,7 @@ HEADER
   margin-top: 40px;
 }
 .mainTitle h1 {
-  font-size: 5em;
+  font-size: 3em;
   font-weight: 200;
   text-align: center;
 }
@@ -47,7 +47,7 @@ HEADER
 
 .mainHeader li {
   font-weight: 300;
-  font-size: 1.3em;
+  font-size: 0.8em;
   margin-left: 5px;
   display: inline;
   padding-bottom: 3px;
@@ -83,7 +83,7 @@ HEADER
 /* Social Links */
 .mainSocial {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .mainSocial ul {
@@ -104,7 +104,7 @@ HEADER
 .fa-facebook, .fa-snapchat-ghost, .fa-twitter, .fa-instagram, .fa-github, .fa-digital-ocean {
   /* color: white; */
   color: black;
-  font-size: 2em;
+  font-size: 1.2em;
 }
 
 .fa-facebook:hover {
@@ -138,15 +138,23 @@ BODY
 ******************************/
 
 .mainBody h1 {
-  font-size: 3em;
+  font-size: 1.8em;
   margin-top: 50px;
   margin-bottom: 20px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .mainBody h2 {
-  font-size: 2.4em;
+  font-size: 1.8em;
   margin-top: 60px;
   margin-bottom: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.mainBody h4 {
+  font-size: 1.3em;
 }
 
 .mainBody h4, .mainBody h5 {
@@ -157,22 +165,23 @@ BODY
   font-weight: 400;
 }
 
-.mainBody h1, .mainBody h2, .mainBody h4, .mainBody h5 {
+.mainBody h4, .mainBody h5 {
   font-weight: 200;
   text-align: center;
 }
 
 .mainBody img {
-  width: 500px;
-  height: 529px;
+  width: 300px;
+  height: 317px;
   margin-left: auto;
   margin-right: auto;
   display: block;
   border-radius: 300px;
+  margin-top: 50px;
 }
 
 .mainBody p {
-  font-size: 1.6em;
+  font-size: 1em;
   font-weight: 200;
   text-align: center;
 }
