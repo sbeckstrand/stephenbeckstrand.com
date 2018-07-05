@@ -5,6 +5,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+
+  margin-bottom: 50px;
 }
 
 /******************************
@@ -155,6 +157,7 @@ BODY
 
 .mainBody h4 {
   font-size: 1.3em;
+  margin-bottom: 20px;
 }
 
 .mainBody h4, .mainBody h5 {
@@ -163,11 +166,18 @@ BODY
 
 .mainBody h4 span, .mainBody h5 span {
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .mainBody h4, .mainBody h5 {
   font-weight: 200;
   text-align: center;
+}
+
+.experience h5 {
+  font-size: 1em;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 .mainBody img {
