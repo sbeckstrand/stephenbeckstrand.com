@@ -180,6 +180,36 @@ BODY
   margin-top: 10px;
 }
 
+.fa-js {
+  color: #f7df1e;
+}
+
+.fa-vuejs {
+  color: #42b883;
+}
+
+.icon-ruby {
+  color: #cc342d;
+}
+
+.fa-python {
+  color: #4584b6;
+}
+
+.icon-redhat {
+  color: #cc0000;
+}
+
+.icon-debian {
+  color: #a80030;
+}
+
+.fa-microsoft {
+  color: #0078d7;
+}
+
+
+
 .mainBody img {
   width: 300px;
   height: 317px;
