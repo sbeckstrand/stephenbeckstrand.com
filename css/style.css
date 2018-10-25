@@ -254,6 +254,10 @@ BODY
 .experience p {
   margin-top: 20px;
 }
+
+pre, code{
+    white-space:normal;
+}
 /******************************
 FOOTER
 ******************************/
