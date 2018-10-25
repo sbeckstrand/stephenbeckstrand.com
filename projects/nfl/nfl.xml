@@ -1,0 +1,53 @@
+<nfl>
+  <conference c="afc">
+    <division d="afcn">
+      <team tm="steelers" w="" l="" t="">
+      <team tm="ravens">
+      <team tm="bengals">
+      <team tm="browns">
+    </division>
+    <division d="afce">
+      <team tm="patriots">
+      <team tm="bills">
+      <team tm="jets">
+      <team tm="dolphins">
+    </division>
+    <division d="afcs">
+      <team tm="texans">
+      <team tm="jaguars">
+      <team tm="titans">
+      <team tm="colts">
+    </division>
+    <division d="afcw">
+      <team tm="broncos">
+      <team tm="raiders">
+      <team tm="chiefs">
+      <team tm="chargers">
+    </division>
+  </conference>
+  <conference c="nfc">
+    <division d="nfcn">
+      <team tm="vikings">
+      <team tm="packers">
+      <team tm="bears">
+      <team tm="lions">
+    </division>
+    <division d="nfce">
+      <team t="eagles">
+      <team t="cowboys">
+      <team t="redskins">
+      <team t="giants">
+    </division>
+    <division d="nfcs">
+      <team t="falcons">
+      <team t="buccaneers">
+      <team t="panthers">
+      <team t="saints">
+    </division>
+    <division d="nfcw">
+      <team t="rams">
+      <team t="seahawks">
+      <team t="cardinals">
+      <team t="49ers">
+    </division>
+</nfl>

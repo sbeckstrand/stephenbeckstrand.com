@@ -1,0 +1,280 @@
+body {
+  background-color: #564787;
+  font-family: 'Muli', sans-serif;
+  -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none; /* Non-prefixed version, currently
+                                 supported by Chrome and Opera */
+}
+
+
+.frontPage, .gamePage, .opponent-row, .playAgain {
+  opacity: 0;
+  visibility: hidden;
+
+}
+
+.open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1.5s linear;
+}
+
+
+#minus {
+  padding-right: 10px;
+}
+
+#plus {
+  padding-left: 10px;
+}
+
+#opponents {
+  font-weight: 200;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+  color: #F2FDFF;
+  font-weight: 200;
+}
+
+h3, #oValue {
+  font-weight: 200;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+#oValue {
+  font-size: 2em;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #564787;
+}
+
+#selected {
+  border: 5px solid #F2FDFF;
+}
+
+.grid-border {
+  border: solid 5px #564787;
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.grid-border:hover {
+  border: solid 5px #F2FDFF;
+}
+
+i {
+  color: #F2FDFF;
+  font-size: 2em;
+  padding: 5px;
+  border: solid 5px #564787;
+  border-radius: 20px;
+  font-weight: 200;
+}
+
+i:hover {
+  border: solid 5px #F2FDFF;
+}
+
+span {
+  color: white;
+  font-size: 2.5em;
+  margin: 0px 5px;
+  font-weight: 400;
+}
+
+.quantity {
+  text-align: center;
+}
+
+.fa, .fas {
+  background-color: #564787;
+}
+
+.fa, .fas {
+  background-color: #564787;
+}
+
+.btn {
+  display: block;
+  margin: 50px auto;
+  background-color: #F2FDFF;
+  color: #564787;
+  border: solid 3px #F2FDFF;
+  font-size: 1.5em;
+}
+
+.start {
+  width: 20%;
+}
+
+.btn:hover {
+  background-color: #564787;
+  color: #F2FDFF;
+  border: solid 3px #F2FDFF;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5,3vw);
+  grid-gap: 5px;
+  justify-content: center;
+}
+
+.grid > .item {
+  position: relative;
+  height: 3vw;
+  background-color: #FFFFFF;
+  text-align: center;
+  font-size: 2em;
+  color: #564787;
+  vertical-align: center;
+  line-height: 3vw;
+}
+.title {
+  text-align: center;
+  font-size: 4em;
+  color: #F2FDFF;
+}
+
+.currentNumber {
+  border: solid 3px #564787;
+}
+
+.currentNumber:focus, .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.currentButton, .currentNumber {
+  color: #564787;
+  text-align: center;
+  background-color: #F2FDFF;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.currentNumber:hover, .currentButton:hover {
+  background-color: #564787;
+  color: #F2FDFF;
+  border: 3px solid #F2FDFF;
+}
+
+ .fa-star {
+  font-size: .8em;
+  background-color: inherit;
+  color: #564787;
+  border: none;
+}
+
+.fa-star:hover {
+  border: none;
+  background-color: inherit;
+}
+
+.opponentGrid {
+margin-bottom: 50px;}
+
+.opponentGrid .grid {
+  grid-template-columns: repeat(5,2vw);
+
+}
+
+.opponentGrid .grid > .item {
+  height: 2vw;
+  line-height: 2vw;
+  font-size: 1em;
+}
+
+.opponentGrid .fa-star {
+  font-size: .8em;
+}
+
+
+.highlighted {
+  outline: 6px solid yellow;
+}
+
+.highlighted:hover {
+  cursor: pointer;
+}
+
+.off {
+  opacity: .3;
+}
+
+.off:hover {
+  background-color: #F2FDFF;
+  color: #564787;
+}
+
+
+.playAgain {
+  margin: 20px auto;
+}
+
+
+
+@media screen and (max-width:1596px) {
+
+  .opponentGrid .grid > .item {
+    font-size: .8em;
+    height: 3vw;
+    line-height: 3vw;
+  }
+
+  .opponentGrid .grid {
+    grid-template-columns: repeat(5,3vw);
+  }
+
+  .opponentGrid .fa-star {
+    font-size: .6em;
+  }
+
+  .grid > .item {
+    font-size: 1.3em;
+  }
+
+  .fa-star {
+    font-size: .6em;
+  }
+}
+
+
+@media screen and (max-width:960px) {
+
+  .grid {
+    grid-template-columns: repeat(5,10vw);
+  }
+
+  .grid > .item {
+    height: 10vw;
+    line-height: 10vw;
+  }
+
+  .fa-star {
+    font-size: .7em;
+  }
+
+  .opponentGrid .grid > .item {
+    height: 7vw;
+    line-height: 7vw;
+  }
+
+  .opponentGrid .grid  {
+    grid-template-columns: repeat(5,7vw);
+  }
+}

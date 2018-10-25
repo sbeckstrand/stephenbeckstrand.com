@@ -1,0 +1,115 @@
+a{
+  color: black;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #21A179;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  border-bottom: 1px solid #21A179;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  border-bottom: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  background-color: #21A179;
+  color: white;
+}
+
+.navbar-default {
+  background-color: #21A179;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-default .navbar-toggle {
+  background-color: white;
+}
+
+
+
+
+
+.tab-content .container-fluid {
+  margin-top: 50px;
+}
+
+
+
+.homeScore, .awayScore {
+  text-align: center;
+}
+
+.homeTeam, .awayTeam {
+  width: 75%;
+  text-align: left;
+
+}
+
+.homeTeam img, .awayTeam img {
+  height: 18px;
+  width: 28px;
+  border-radius: 3px;
+  margin-right: 7px;
+}
+
+
+.table-responsive {
+  border-top: 4px solid #ddd;
+  border-radius: 3px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+
+
+td {
+  width: 25%;
+}
+
+
+
+
+.confLogo {
+  display: block;
+  width: 150px;
+  margin: 50px auto;
+}
+
+
+
+.win {
+  background-color: #93d8a5;
+}
+
+.lose {
+  background-color: #ff9090;
+}
+
+.tie {
+  background-color: #add3ff;
+}
+
+.totals ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.totals ul li {
+  list-style: none;
+  font-size: 2em;
+}
+@media (min-width: 768px) {
+  .totals ul li {
+    display: inline;
+
+    margin-right: 30px;
+  }
+}
