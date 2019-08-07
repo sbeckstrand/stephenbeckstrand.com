@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   /* background-image: url('../assets/images/logan.jpg'); */
   /* color: white; */
   background-repeat: no-repeat;
@@ -7,20 +7,6 @@ body {
   background-position: center;
 
   margin-bottom: 50px;
-}
-
-/******************************
-HEADER
-******************************/
-
-/* Title */
-.mainTitle {
-  margin-top: 40px;
-}
-.mainTitle h1 {
-  font-size: 3em;
-  font-weight: 200;
-  text-align: center;
 }
 
 .mainTitle, .mainHeader {
@@ -35,11 +21,6 @@ HEADER
 /***************/
 
 /* Nav */
-.mainHeader {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
 .mainHeader ul {
   list-style: none;
   display: inline;
@@ -49,10 +30,9 @@ HEADER
 
 .mainHeader li {
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 1em;
   margin-left: 5px;
   display: inline;
-  padding-bottom: 3px;
 }
 
 .mainHeader li:first-child {
@@ -83,11 +63,10 @@ HEADER
 /***************/
 
 /* Social Links */
-.mainSocial {
-  text-align: center;
-  margin-bottom: 0px;
-}
 
+.mainSocial li:first-child {
+  margin-left: 0px;
+}
 .mainSocial ul {
   list-style: none;
   display: inline;
@@ -139,46 +118,6 @@ HEADER
 BODY
 ******************************/
 
-.mainBody h1 {
-  font-size: 1.8em;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-weight: 300;
-  text-align: center;
-}
-
-.mainBody h2 {
-  font-size: 1.8em;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  font-weight: 300;
-  text-align: center;
-}
-
-.mainBody h4 {
-  font-size: 1.3em;
-  margin-bottom: 20px;
-}
-
-.mainBody h4, .mainBody h5 {
-  margin-top: 40px;
-}
-
-.mainBody h4 span, .mainBody h5 span {
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.mainBody h4, .mainBody h5 {
-  font-weight: 200;
-  text-align: center;
-}
-
-.experience h5 {
-  font-size: 1em;
-  margin-bottom: 15px;
-  margin-top: 10px;
-}
 
 .fa-js {
   color: #f7df1e;
@@ -210,27 +149,17 @@ BODY
 
 
 
-.mainBody img {
-  width: 300px;
-  height: 317px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  border-radius: 300px;
-  margin-top: 50px;
-}
-
-.mainBody p {
-  font-size: 1em;
-  font-weight: 200;
-  text-align: center;
-}
-
-.mainBody a {
+.mainBody a, h5 a, p a {
   text-decoration: none;
-  font-weight: 400;
   color: inherit;
+  font-weight: 500
 }
+
+p a:hover {
+  color: #F8807F;
+  text-decoration: none;
+}
+
 
 .about a:hover {
   color: #F8807F;
@@ -243,18 +172,20 @@ BODY
 .experience ul {
   text-decoration: none;
   list-style: none;
-  text-align: center;
 }
 
-.experience ul, .experience li {
-  margin: 0;
-  padding: 0;
+h5 {
+  font-weight:400;
 }
 
-.experience p {
-  margin-top: 20px;
+
+h6 {
+  font-weight:400;
 }
 
+.list-group-item {
+  padding: .3rem 1.25rem;
+}
 pre, code{
     white-space:normal;
 }
