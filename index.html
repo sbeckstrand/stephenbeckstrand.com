@@ -1,134 +1,88 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    ​
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"></script>
+    ​
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700&display=swap" rel="stylesheet"> 
+    ​
+​    <!-- VueJS -->
+​    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    ​
     <title>Stephen Beckstrand</title>
   </head>
+
   <body>
-    <div class="container-fluid">
-      <div class="row mt-3">
-        <div class="col-md-7 offset-md-3">
-          <div class="mainTitle">
-            <h1 class="font-weight-light">Stephen Beckstrand</h1>
+    <div id="app">
+      <div class="container-fluid">
+        <!-- Title -->
+        <div class="row justify-content-md-center">
+          <div class="col-xl-6 col-md-8 mt-3">
+            <h2 class="mb-0">Stephen Beckstrand</h2>
           </div>
-          <div class="mainHeader mb-3">
-            <ul>
-              <li><a href="https://www.stephenbeckstrand.com" style="color:#F8807F; font-weight:700;">About</a></li>
-              <li><a href="http://www.stephenbeckstrand.com/blog">Blog</a></li>
-            </ul>
-          </div>
-          <div class="mainSocial">
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/stephen.beckstrand">
-                  <i class="fab fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.snapchat.com/add/spbeckstrand">
-                  <i class="fab fa-snapchat-ghost"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/spbeckstrand">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/stephenpbeckstrand/">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/xdls">
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.digitalocean.com/community/users/sbeckstrand">
-                  <i class="fab fa-digital-ocean"></i>
-                </a>
+        </div>
+
+
+        <!-- Social Link -->
+        <div class="row row justify-content-md-center">
+          <div class="col-xl-6 col-md-8">
+            <ul id="social">
+              <li v-for="(item, index) in social" :key="index">
+                <a :href="item.link" :id="item.name"><i :class="item.class"></i></a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="col-md-4 offset-md-3 mainBody about mt-4">
-          <h1 class="display-4 mb-3" style="font-size:2em">About Me</h1>
-          <div class="border border-dark pl-2 p-1">
-            <p>Hi! I'm Stephen.</p>
-            <p>From Salt Lake and currently living in Logan, Utah.</p>
-            <p>Working for <a href='https://www.digitalocean.com'>DigitalOcean</a> as a Cloud Operations Engineer while also attending <a href="https://www.usu.edu">Utah State University</a> working toward a Computer Science degree with a focus on Software Engineering.</p>
-            <p>I love to learn and take on new challenges. In my free time, I enjoy writing, gardening, working on technical projects, and playing a fun game, whether that be a card game, board game or video game. I also enjoy the great outdoors and taking an afternoon or a weekend to go camping, hiking, or fishing.</p>
-            <p class="mb-0">I would love to talk! Feel free to reach out to me on social media or by <a href="mailto:stephen@ivoryimage.com">email</a>.</p>
-          </div>
-          <h1 class="display-4 my-3" style="font-size:2em">Experience</h1>
-          <div class="border border-dark pl-2 p-1">
-            <h5><a href="#">DigitalOcean</a> / Cloud Operations Engineer | 2016 - Current</h6>
-            <p>I initially started at DigitalOcean working within their Platform Support team. Within this team I took on the role of Developer Support Advocate which entailed providing suppport to customers needing technical advice or assistance when manging services on their VPS. Additionally, I was responsible for meeting with Product and Engineering teams to ensure that services we were or would soon be offering met the needs for our customers and that we had the tooling necessary to provide support.</p>
-            <p>I am now currently filling the role of CLoud Operations Engineer which comes with many responsibilities. Some of which include acting as a system's administrator for systems within our many offered data centers, responding to escalations brought to us by other teams within our organization, monitoring alerting related to products we offer, and communicating with involved engineering teams when an incident arises.</p>
 
-            <h5><a href="#">i.t.NOW</a> / NOC Engineer | 2014 - 2016</h6>
-            <p>While working for i.t.NOW I was responsible for setup monitoring tools, handle automated alerts triggered by these monitors, and automate regularly performed tasks by the rest of our staff.</p>
 
-            <p>A large portion of this work involved monitoring for backup events and backup integrity for several businesses in the Salt Lake area, monitor resource consumption and physical components related to client servers, and monitor network configuration and availability for these clients. The goal was to automate any remedial actions needed for issues that may arise that relate to the mentioned components. </p>
-            <h5><a href="#">Bluehost/EIG</a> / Level 2 Technical Engineer/VPS Support | 2012-2014</h6>
-            <p class="mb-0">Bluehost was the IT related job I had after attending classes at MTEC. Shortly after being hired I was prompted to be a Level 2 Engineer. In this role, I was responsible to provide support and training internally to other engineers escalating issues.</p>
-          </div>
-        </div>
-        <div class="col-md-3 mt-4">
-          <h1 class="display-4 mb-3" style="font-size:2em">Skills</h1>
-          <div class="border border-dark p-1">
-            <h6 class="my-2"><i class="fas fa-code"></i> | Front-End Development</h6>
-            <ul class="list-group">
-              <li class="list-group-item"><i class="fas fa-file-code"></i> HTML/CSS</li>
-              <li class="list-group-item"><i class="fab fa-js"></i> JavaScript</li>
-            </ul>
-            <h6 class="my-2"><i class="fas fa-server"></i> | Back-End Development</h6>
-            <ul class="list-group">
-              <li class="list-group-item"><i class="fab fas fa-gem"></i> Ruby</li>
-              <li class="list-group-item"><i class="fab fa-python"></i> Python</li>
-              <li class="list-group-item"><i class="fas fa-terminal"></i> Bash</li>
-            </ul>
-            <h6 class="my-2"><i class="fab fa-linux"></i> | Linux Administration &nbsp&nbsp</h6>
-            <ul class="list-group">
-              <li class="list-group-item"> Redhat</li>
-              <li class="list-group-item"><i class="icon-debian"></i> Debian</li>
-            </ul>
-            <h6 class="my-2"><i class="fab fa-windows"></i> | Windows Administration &nbsp&nbsp</h6>
-            <ul class="list-group">
-              <li class="list-group-item"><i class="fab fa-microsoft"></i> Server 2008, 2012</li>
-              <li class="list-group-item"><i class="fas fa-envelope"></i> On-Premise Exchange</li>
-              <li class="list-group-item"><i class="fas fa-envelope-open"></i> Office 365</li>
-              <li class="list-group-item"><i class="fas fa-users"></i> Active Directory</li>
-              <li class="list-group-item"><i class="fas fa-file-alt"></i> Group Policy</li>
-            </ul>
-          </div>
-          <h1 class="display-4 my-3" style="font-size:2em">Education</h1>
-          <div class="border border-dark p-1">
-            <p><a href="https://www.usu.edu/">Utah State University</a> | 2018 - Current</a></p>
-            <p><a href="https://www.uvu.com">Utah Valley University</a> | 2017 - 2018</p>
-            <p class="mb-0"><a href="https://mtec.edu/">Mountainland Technical College</a> | 2011 - 2012</p>
+      </div>
+      <div class="container-fluid mt-2">
+        <div class="row justify-content-md-center">
+          <div class="col-xl-6 col-md-8 body">
+            <div class="mb-5">
+              <h4>About Me</h4>
+              <p>Hello! My name is Stephen. I am an undergraduate Computer Science student who has also been working in my field of interest for the last 8 years. I have a passion for education and constantly challenge myself to learn new things and take on new challenges. Although originally from the Salt Lake valley, my wife and I currently live in northern Utah where I enjoy the remote working culture and go to school. </p>
+      ​
+              <p>I originally found my footing in the IT world offering customer service but later moved to system administration. I am now pursuing an interest in software engineering as I feel that experience in each field will prove to improve the quality of my work and what I have to offer.</p>
+      ​
+              <p>I have a deep love for Javascript and webdev in general. Although, as the result of my studies and alignment with professional necessity, I have mostly been writing software in Python, Java and GoLang recently.</p>
+            </div>
+      ​
+            <div class="mb-5">
+              <h4>Experience</h4>
+              <div v-for="(job,index) in jobs" :key="index">
+                <h5><a :href="job.link"><b>{{ job.name }}</b></a>: {{ job.title }}</h5>
+                <h6>({{ job.start }} - {{ job.end }})</h6>
+                <p>{{ job.description }}</p>
+              </div>
+            </div>
+      ​
+            <div class="mb-5">
+              <h4>Education</h4>
+
+              <div v-for="(school,index) in schools" :key="index">
+                <h5><a :href="school.link"><b>{{ school.name }}</b></a></h5>
+                <h6>({{ school.start }} - {{ school.end }})</h6>
+                <p>{{ school.description }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+  ​
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="app.js"></script>
     </div>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src='js/function.js'></script>
   </body>
-</html>
