@@ -7,10 +7,7 @@
     ​
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"></script>
-    ​
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700&display=swap" rel="stylesheet"> 
@@ -24,65 +21,167 @@
   <body>
     <div id="app">
       <div class="container-fluid">
+        
         <!-- Title -->
         <div class="row justify-content-md-center">
           <div class="col-xl-6 col-md-8 mt-3">
-            <h2 class="mb-0">Stephen Beckstrand</h2>
+            <h2 class="mb-3">Stephen Beckstrand</h2>
           </div>
         </div>
-
-
-        <!-- Social Link -->
+      </div>
+      
+      <!-- Bio -->
+      <div class="container-fluid mt-2">
+        <div class="row justify-content-md-center">
+          <div class="col-xl-6 col-md-8 body">
+            <div>
+              <p>Hello! I'm Stephen. </p>
+              
+              <p>A few things about me; I have a beautiful wife and two equally beautiful twin girls. I mean that quite literally as they are identical. I have a passion for education and enjoy working on projects or studying when I manage to find some free time.</p>
+              
+              <p>I am a Cloud Operations Administrator <a href="https://www.digitalocean.com">@DigitalOcean</a> and an undergraduate Computer Science student <a href="https://www.usu.edu">@Utah State University</a></p>
+              
+              <p><span class="font-weight-bold">Where to find me:</span> These days, I am most active in Discord, though you are also welcome to follow my progress in Github as I aimlessly course my way through development projects. Alternatively, feel free to reach out to me via email or social media if there is a project you would like to collaborate on. If all else fails, you might find me in <a href="https://www.reddit.com/r/2meirl4meirl/">r/2meirl4meirl</a>, though I truly hope you don't.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Social Links -->
+      <div class="container-fluid mt-2">
         <div class="row row justify-content-md-center">
           <div class="col-xl-6 col-md-8">
             <ul id="social">
               <li v-for="(item, index) in social" :key="index">
-                <a :href="item.link" :id="item.name"><i :class="item.class"></i></a>
+                <a :href="item.link" :class="item.name"><i :class="item.class"></i></a>
               </li>
             </ul>
           </div>
         </div>
-
-
-
       </div>
-      <div class="container-fluid mt-2">
-        <div class="row justify-content-md-center">
-          <div class="col-xl-6 col-md-8 body">
-            <div class="mb-5">
-              <h4>About Me</h4>
-              <p>Hello! My name is Stephen. I am an undergraduate Computer Science student who has also been working in my field of interest for the last 8 years. I have a passion for education and constantly challenge myself to learn new things and take on new challenges. Although originally from the Salt Lake valley, my wife and I currently live in northern Utah where I enjoy the remote working culture and go to school. </p>
-      ​
-              <p>I originally found my footing in the IT world offering customer service but later moved to system administration. I am now pursuing an interest in software engineering as I feel that experience in each field will prove to improve the quality of my work and what I have to offer.</p>
-      ​
-              <p>I have a deep love for Javascript and webdev in general. Although, as the result of my studies and alignment with professional necessity, I have mostly been writing software in Python, Java and GoLang recently.</p>
-            </div>
-      ​
-            <div class="mb-5">
-              <h4>Experience</h4>
-              <div v-for="(job,index) in jobs" :key="index">
-                <h5><a :href="job.link"><b>{{ job.name }}</b></a>: {{ job.title }}</h5>
-                <h6>({{ job.start }} - {{ job.end }})</h6>
-                <p>{{ job.description }}</p>
-              </div>
-            </div>
-      ​
-            <div class="mb-5">
-              <h4>Education</h4>
+      
 
-              <div v-for="(school,index) in schools" :key="index">
-                <h5><a :href="school.link"><b>{{ school.name }}</b></a></h5>
-                <h6>({{ school.start }} - {{ school.end }})</h6>
-                <p>{{ school.description }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
+      
+      
   ​
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="app.js"></script>
+      
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script type="application/javascript">
+      new Vue({
+        el: '#app',
+        data: {
+          social: [
+            {
+              name: "discord",
+              link: "https://www.discordapp.com/users/349749789598154763",
+              class: "fab fa-discord"
+            },
+            {
+              name: "twitter",
+              link: "https://twitter.com/spbeckstrand",
+              class: "fab fa-twitter"
+            },
+            {
+              name: "instagram",
+              link: "https://www.instagram.com/stephenpbeckstrand/",
+              class: "fab fa-instagram"
+            },
+            {
+              name: "github",
+              link: "https://github.com/sbeckstrand",
+              class: "fab fa-github"
+            },
+            {
+              name: "linkedin",
+              link: "https://www.linkedin.com/in/stephen-beckstrand/",
+              class: "fab fa-linkedin"
+            },
+            {
+              name: "email",
+              link: "mailto:spbeckstrand@gmail.com",
+              class: "fas fa-envelope-square"
+            }
+          ]
+        }
+      })
+    </script>
   </body>
+  
+<style>
+  body {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  ul {
+    padding-left: 0;
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  ul li {
+    display: inline;
+  }
+  
+  a, a:hover {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 4px;
+  }
+  
+  .blog:hover {
+    color: #0056b3;
+  }
+  
+  i {
+    font-size: 1.5em;
+    margin-right: 2px;
+  }
+  
+  .discord:hover {
+    color: #7289d9;
+  }
+  
+  .twitter:hover {
+      color: #55acee;
+  }
+  
+  .instagram:hover {
+    color: #E4405F;
+  }
+  
+  .github:hover {
+    color: #6C3483;
+  }
+  
+  .digitalocean:hover {
+    color: #0080FF;
+  }
+  
+  .linkedin:hover {
+    color: #0077b5;
+  }
+  
+  .gitlab:hover {
+    color: #E2432A;
+  }
+  
+  .email:hover {
+    color: #fc035a
+  }
+  .body a {
+    color: #F8807F;
+  }
+  .body h5 {
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .body h6 {
+    font-weight: 300;
+  }
+</style>
